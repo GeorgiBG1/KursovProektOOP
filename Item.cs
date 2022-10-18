@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KursovProekt
 {
-    class Item
+    public class Item
     {
         public string Name { get; private set; }
         public double Attack { get; private set; }
@@ -22,7 +22,7 @@ namespace KursovProekt
                 Console.WriteLine("Invalid Attack / Defence item value");
             }
         }
-
+        
         public void UpgradeAttack(double atk)
         {
             Attack += atk;
